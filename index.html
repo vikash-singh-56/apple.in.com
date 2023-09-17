@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Apple Store</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="https://www.apple.com/in/" class="nav__logo">
+                    <i class='bx bxs-watch nav__logo-icon'></i> Apple
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">Featured</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#new" class="nav__link">New</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">My Cart</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR0jalloZVBdex2mHHYO1FzuUmNWkQ2O3eHymOXOIF4ninwP_zwWBaw5l_90w4_Ul-Tqjxr1CalGlaaG4qgLBUC4n-uLXA8rSddm0plNo-KvOZmwGbY5w09H9o" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Apple SE GPS Watch</h3>
+                        <span class="cart__price">Rs 37,900</span>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR-cfZgxAlHr1uKvpxELQLDXx3DybNvs2MDjjm1xL3jiTdp0rn4RkpAsZOr_5Eb_sjoSx2wrpg8A67xunY78QkDJim2GhTHniBAuOhzAQHAxpI0zmTty2cuIQ" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Apple Watch 8 Series</h3>
+                        <span class="cart__price">Rs 35,900</span>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTaPiNJRCENUwDBygyJDP4IXIcMHIkI73JUXJFSv_qSXb0NOsmeRfZyJ2Tx_-pudIT_o5pj-LbWHrMRfe8mIGQV4tNlxuUPv1xaT1ED4bRgecLfXL4gvadMbg" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Apple Watch 7 Series</h3>
+                        <span class="cart__price">Rs 37,900</span>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 items</span>
+                <span class="cart__prices-total">Rs 111,700</span>
+            </div>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <div class="home__img-bg">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFBgVFRUYGBgaGhwYGhsZGxsYGxoaGxoaGyEYGR0bJC0kGx0qIhoZJTcmKi4xNDQ0GiM6PzwzPi0zNDEBCwsLEA8QHxISHzYrIysxMTUzNjMxMzM6Mz4+MTE8Oj85MTUzNTU1Pz4zPj4zPDU8MzMxNDExNTM+Mz0zMzM1Mf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABAUCBgcDCAH/xABIEAACAQIDBAYGBgcGBQUAAAABAgADEQQSIQUxQVEGE2FxgZEHIjJSobEUQmJzwdEjM3KCkrLwFTRDU8LhdKKz0uIWJESj8f/EABgBAQADAQAAAAAAAAAAAAAAAAABAgME/8QAKREBAQACAAUCBQUBAAAAAAAAAAECEQMSITFBUWEEEyJxgTKhwdHxkf/aAAwDAQACEQMRAD8A7NERAREQEREBERAREQESBtbalLDUjVrOFQaX4kncoHEnlNPrelTBDclU+CAfzwN/icRxvpQxTMSlSnTW+gVQ5A5EsNTK2t6QcY3/AMp/3URfkIH0BE+cavSvFvvr4o9zuB5AyDidq1W9tqu4m9R2Og3ntgfSlXFIvtOq/tMB8550to0XBK1abAGxKupseRsdJ8x0MUKgJF9NDff3zxwWPqJXZVYqNV000HaIH1TTro3ssp7iD8p6z5dq7erUqi2qPc7yWLWB00BuJtOyPSBjaJAe1RfEXHxHwEDvMTT+jXTrD4qyk9W/utpfu/o+E3CAiIgIiICIiAiIgIiICIiAiIgIiICaj0q6dYfBP1TAvUsGKggBQd2ZuBO+1t3eJcbc25RwlMvUYXHsoCMzHgqj8dwnz9tqkMViKuIqZs1RixAOi8Ao7AAB4QLrpj00XHlVdVSmhzKgJY5rWzMdLmxIGmlzNYOKoD6o8hMhsen7reLGZf2bSH1F8T/vA8TtWkNyjyH5TE7dXgJIGEpDgg8pkFpDinlAi/2uWDWuAozG17nsEJXFRC7aXurXO7hoZJOHFRW3esLADeAeNufGQ62BeiqI6OLguLgre5tcA90CPQXqgQGVmY37hw8ZktUe1azHQsAd3iLT8zfZPnDE+6PG8D8OViC+a6m4sLX+yZ+4/FEpdCRZhe3cba8phc/YH9d8JVCm90PAjSx79YExa5XKxuLgEMNLNa+vI8bzrvo26ZGp/wC1xDeuBem50zAb1PbOTbPrBzl1Oovktu7N86NsnoPhnRalKvXpuNRqhsez1QRItTp16Jp+F23Uw1ICqwqJTsrOVKsVH1swJViBwsN03CSh+xEQEREBERAREQEREBETzqVAoJYgAakk2AHMk7oHpOcelbpu2CRcPQNq9UZiwtenTva4+0xBAPCxPKWO3vSBh6QKUXR397VkU/u6uewWHbOW7RrYavUarWeriKjHVrAdygaZVHACBqFTbdViSWJJ1JJuSeZJ3zybatQ8T5zcUfCL7OEc/tf0Z6rtSmvs4NB4/wDjA0Y42oefxn51tU8D5Gb3/wCoQP8A4yDx/wDGP/VAH+Avmf8AtgaH+k5GBTqH/wDROiUekdNt9MDy+f52mOJqUa2gVb8rWMCp9H6k7QwyvuclG7wGKnvt8p070o9FlqYRXoq2ek4JsSWZGuCNd9iVPhOXolTC1Ur0xc03VwDqDlN7d0730Y29Sx+GWtTtZhldDYlGtqjc/wAQRA+aamFykhs9xvBDAjvBmH0dPdc986R6ZtkjD1KFWggAqBkcAaBkylfEgt/DOZ9dW90eUD0+jr/ln4fnP3qh/ljzE8s1Y8h4CY5K3P5QJWHLI2ZRl52OvhLWht7EIFKVioJtlaxueWo3zXzRq+98Zl9Gdky3uwbNv3gi19eVoG74DbNfGKMO9Wmi1SKebKyaswUhtSBx0y67rifQQE+SsTTe9lvdXLacM1iG7OOs+rNn1s9Km975kVr88yg3+MCVERAREQEREBERAREQIW09oU8PSatVbKiC5PE8gBxJNgB2zj+2tqVse+esSlHelFTYAcGf3m7fK0v/AEhbQ67EphQf0dECpVHBqjD1FPcuv73ZKJUzHlzJvYaE627oJNq4YVF3Io8BfzmLiWmJoKdEDFhfTTcL3Y28NeVpAxlE02KNa4321G6/4ysylWywsQagkWoJMZCdwMjVaTcjJ2jVQagkSpJlYWnpjtkuq9YpDoALsuoBIB17Bff8pFyk7rY4ZZS2TspXNt0stj4pWcI+nANyPA90xxWCXqw1M5rC5JuMxLhAqrw1zeA7bSoLFW5EHUHTvBiZS9kZYXHu6dh8KHUhhqN8ndGqhweIaol8jgCqg3OBucDg4ue/dKzo9jOspo17n2G7xuPlY+Mtcfhw6Eai4IJBsRfiDwIllW99J9hU8fhghI3h0YcDY2II4EMfOfPG0cG1Gq9KoxDo7I2oGqm1+4ixHYRPoDoVjC1E02N2p213XDX4cNQ2nAWnGPSpslxtOuxIAfI69q5FX4MrDwga4zJ7/wDzTBqtP3v+Y/nIv9mn31j+zx74gerVafMfEzA4hBqpsewGY/QB74mJwa+9Asa1desUrfMAuYcCptp3jMDO3eifpGuIoNhybvh7KDzQ3t5EEeU4ZTo3zVQbkLqvHMtvhYTpHoQpquKxBDXz0wyjsDi9+0ZhA7XERAREQEREBERATEm2syldt2t1eFruPq0qjeSMYHH6eJ616tc6mrUd/wB3MQo8AJPwzXsqA5jpa/G3tH7PHsy9sqcALUkH2R8paUcR1SNYEVG0FxuQ/WB8/hKZ9ujTh/q69nti8UKQNOkbufbft5Dlb4SkdgvaeN+HdPSs9gVHjJr4dKiqSMigFlHHUAlWPu5rkMdbP3GVkmM3V7bndT/FKat2AZiASASOV9Trpf8AKY7UpimyhXzAqGOqnXM4+qd1gDbfrLN8XSpn1QNOQt5k+teYvtakMyMA4NvW0cC4HvCLnfETOHj5ya4+Ivowvv149g8/nM8JtB6JzUzmQ+0hPP5Ht85Y1cDSq6ocpFicpsCL63BHqabju7DKTH1mFV2ZQhZyxVQLAEk2W2hWx04GOmUs/Y1lw7Lv7WJ+0KYVRisMTk1zIDbIxtqQOFwpI7BwM1KoZfYDaHUNmylqVQEOn5X/AKse4yhrMLmwsLmw32F9BHClx3L+KcfLHKTKd/M/ltfQ7Feoy8ip+JHyyzesXiUSmWc2HxN+A5mc06LPYv3f6klt0r2kTUSmhUlUBIJsoJF9Tff+c1c7dOi23GpOXNM5CpSwYX3ggnS19PjPf0pJSxOzvpiaPRdRra9nYIUP8YaarsnD16lJQ1Tq11INMqS972bM17AbrW4eEmbUwtd8Di6F84yJWV7AEinUTMGC6FgGY3AFwu4W1jmm9b6rcmWt66OYfTR/Qn4cb2mZf2YfeWP7N+0JKryOL75gcR3z3Oz/ALQmBwX2oEnZmJCioWvlsL89Ta02LoPtv6Hi8OR6yu+Qn7DsF18wfCazQoXvTB1YCxO64N7eOsttiYVGxVJHJHV1KdyOKkpf43MD6liIgIiICIiAiIgJT9Lv7jiv+Hq/9NpcSl6YH/2GK+4q/wAjQOO4Z/UT9lfkJJpszW3sdFUcdeUr6D+ov7I+Ul08T1bI2UMV1sbi5PEEWNxwIO8SKmJGEwxzE1ARkNiDocw33uNy8fAcZHx20ScygCx7Nb3BzDt3juJHbLPbdbJSCFhnNnYHeb6WFhbTw0Ud01d2lMPq6/8AG3E+ick/KzTYNd8McUqqaQJF8wzaME0XvPwMxHRjEMQBk1fIDmNi3V9ZpYbreOnLWYrUqCj1AxCCm703KZvrNcX/AHbAkdgPCej7Wri7DEUr6vbKm8EU8tsu6wDW569snnjP5WXo16jjWp3y21trvIAN7A8L8edpYYq2JpgqoDrutvJOuW3EE5j2Hs31OMTLUZAwc5rArrmJ5c7mW+xcP1NQ9Y7BwrO6IAy00VST17XsrE2AUXIJF7E5TXPHpzTv4acLPWXLl2vRrdIE3FjZjlJ4A2JA5X7N8r6otcctJs/TB2RxTAUUm/SDKqgs2ZyczAXaxd7a2Aea5jt4a1swBty4cdZbDKWSzyrxMLhbje8qw2FUypWbkl/+ZJ67OqM5ep6uZ3NiQTpoAOwSJskXpYgDih+aT02LcpbcFb1ha+bjbfpppLsnTQgUBQAtgNBuv/V/OT9i1AKyBrZWORgdxV/VIPgZBQ3CmwF1BsOHZ8p7YagzuEQ2ZjlU8idBM/H5beZ9nFcZmR2UMxAZgDc6gEieHWHmfMyWdnPqDoRoRfcRvBmJ2e/ZNGKLnPMzG8nNsyoNSp036HSeTYRhygNn36xbc5a1MSKdR6qkNcJlsdL6j4ZZXYRctRSbcvMWnSdm7EobRoGnlFLEhAysoyioo4kcSCCDbtkWjsnR7H/SMLQrkWNSmjkciygn43llK3o/hVpYWhSXclNE/hUA/ESykhERAREQEREBKTpl/cMV9xU/kMu5SdMv7hivuKn8pgcPovoo7APlJuDs9dBwLjt3a/hKvDv7Phy7OekuNiimaiPnJc1HUqfcFMnN5kDf8pnndY2+1a8LHeUnvGG3K2es+ui6eWnzkmhWFRFWwqZQqGgzEE2W2fDt9WoQLlRvNzZtwibRRf0jg5m62x0tluKhy9uoGsi7KxT9aKYN0fRl7Le32Eb79krMtY9PEa5Yc2fXzXjtHChR1lIl6RNrkWZD7lRfqtv13Hgd4EGnhalR8irqBmNyFVVsDndjoq2I1PObLj8bTCdZWp5zUFOnUZWKOVZFqF9PVaoGVSCQb7jfePGrUw6u9FaZqlk6xmZyBekrGmgWna6kAO1zf1wBa0tjnLN+FM+FlMuXyiDq6SZqTFFF1bEkHrKjbimEQ2y77FzYgHUruNfjq6VaH6ANTSlZnpXBza2FZmAGdhu1Fl4AcZmGoJiKYrVbsxfKagWsyUwroEw608OLJnDG1wB6wy6gyM2FWlixTVDTD0W6ymxYlMyPdTm9YXCo9m9YZwDJy7bnhXhauWrO/wCz82+esweHqbypyE6brEcO1B5zWKpBpi3BiN/MX0HKbW9JWwCqHzjrEAZQQTcrcANl1GYjXTt4zXtqYcUjVpB86pUKg3O4E62Glz3zPg9rPS10fFdcpfXGVK6MrcVBzX8Vkra2F+jV1KMbOgcqDYg8SL6HWRuiZ1f9n8RLDpn+upfdfjN3Evdg7VGRVqAoDc0yxW7AXu1xppxHd2TduhNanVxRy3YIjNm4Z7quXtIDE6btJqGxkU4JM9MOArNkIDZiCTYA8ZvHQUAVdFyjqj6tgMvrJpYSvJN7X5rrTnnpibLWWnaw9Zltu/WVb+NmT4Tmd53P01bKHVLibA5CL34hrIQPEUz4NOKnEL/lrJijuuCrrjtlK59pqdnIGodAUc9+jEd4nD9oYusf0VRyQjEZdLBgSDu38ZtXQnpn9EV6LBRTY51Ni2VrAEdxAHiO2a9t7EU3rM9Mhg+p0tY7uMRNVE2PojttsPWQ30DAr2MdLfstuPgeE1wme9D62lwBfluI/OSh9TdH8eHJA9h1FROy9rr5n4GX85n0JxhR6dFjdkd6ZPPL1g/M+E6ZIiaRESUEREBERASk6Zf3DFfcVP5DLuUvTH+4Yr7ip/IYHz5TqWt2W/rWTtm1suKQkj27bre1dd3jKbrJ61XN1ZRqbZbb819NOd7W5ymU3NerTh5asvpZWxVcUKeKqIzZVchgx1CuDnVj9nUg9hk5aRAKhKgU3JRQhU31IFXeKZ87eUqukgWpTWv64JCrly6Zt7BibEWGYbjqttNZrLYhsuXM2X3bm3lunPOFzyav3duXG+VlZZud59qutvYtXIXMCFJZiu56hsCE+yoCqD2SM+JFPEK63uopnKfrg01BUdpBI1jB7JNbdURArimbgkqOqepnNt4ORha97ngJNPRepVe4qIrZVJUhjYBSim4Fjmem47LA63Am0wkkx9q58uLbbl53FTjdlODnoq1Sk2qMgLED3XA1DDdrC0Gw1NqlT1arqy00PtAN7VRuWmgvzlecZURiyOyZgGOViupAOttJjgaJrVbM/rEXBbMczC1lJGovz7OG8NXWrehzY73jLvx6RebR9TZtNTvZ+3cC3PXgJrbaUuGrcOwHfbTz1l50uxCnqaKG6qgItxuBb4C/70o8Toqrax1JB113eG46SvBn09fNtX+Kv16niSLfonvqfs/isn9M/wBdS+6/GQOif+J+z+Kyd0z/AF9P7ofObuNs/R1ycPSQGxysxO/QNaw7Tf4Gb10K/Xt9238yTQOjH6un93/radA6F/r2+7b+ZIGt+nfGuiYZALo5cnkSuT8xOJuwPC07H6csWXahST1mTOzW1y5gunlacgam/EH4QPCJNwdAOxDMF00uQtz38JntjBJRqFKdUVlABzqLC53jQn5wK+TMO4WmxsCWYLrytcyHabN0O2SMTVSk98r1UW/LXVh4Xgdb9H+zHZqdV9WzPXdhe2Z1cKmvM1KjdyLznS5HwuFSkgRFCqBYAaSRAREQEREBERASm6X/ANwxf/D1f+m0uZVdJ6ebBYlRvNCqP/raB8xM+pk3ZuPemwqU7B6ZLKTuAIIb4H4yqqN6x7z85nSDAGoBotid+oJy6G1uPxkVbHu2Xo/tAVRUw9Vrlyzqx35yczeN/W85R7RwNSm7KVPq6kgEgLe2a/Ldr+OkjVtCHQ2B1W2hXLbyI/Dxm2YXHLiKKLibI1QMFe4AcKwBB5HMqnKdCQCNRpz3eGXNJuXv7e7rx5eNjMMrrKdr4s9Gs08dVp2qUndLEElTazhWS+m71XYfvGS6218SjhKdV1UBSADoC1NLnXdzvwOosdZjW2Oyk5GHc2lxe2qtoRfkTP3F7PqM2llUqgNsoJsijXW9riaTiY7nVT5OcxssveKWt6zHLcgWUacBoPO02no/g1w9NsTV0sPVHE34jv3DvJ5T12Ts2nRRmqPfMQhSxIcghgoBF3OYDcBuIlJ0i2s9epkIKqhKhTvzDQluF+HZM88rxLy49vN/pvhhOBPmZ/q8T+a/G2mayuj00JepnNTKM6Cx9RW4LoN53A94qcVUzMTw3DuGgnu/qLbczCza3sL/AD+Vue6FadEno4c7fPfy2Pon9fu/1JJnTP8AX0/uh85D6Kf4nd/qSTemSMcQllJ/RgaSVGxdGP1dP7v/AFtOgdC/17fdt/Mk590aNkpA6E02HirG/wAxNw2ZtVcKKtdtyUz5l0sPmfCByz0i42oNp4oZtBUIHYLA2+M1k41+cutrWr1qlY1Bd3L679dw8rSCcCvvLAgNiCZj1p5CWtLCUf8AEz7jYIUALcLk7h4SGcN2fL84EXrDN29HVdxtPBovs7yLc6b3Ph+E1FcISQBvM7N6IdhIXfEsvrUgKaHtZSWPgCB+8YHW4iICIiAiIgIiICeVekHRkO5lKnuItPWIHyLtWiaVZ6bb1Yqe8Gx+IMzwO0igIILaHKOAY8xy/wB+Zm3+mDYpoY1qoHq1RnB4XPtDvDXP76yl6LUaTI6kBnOhBNgEAvfUi4vv4iwmfEymOO7G3w+Fzzkl0qnoPSAzAlWADcAGN/VB94W18RPPEoz2ZWLAWRQSSVUCwU33AeUk0sZTVmQ6p6wDak2JF/MDfv0XdreFi3C1G6s2ANtN27W2p0ve2pky0zkjOhtWsgAVzbgGAYC3LMDbwltt3HV6NXJ1iMciNnVEvqinfa4tuHZY8ZTfTbixRTpa+42ve0fSU/y+XHlFxm92JnEyk1Mrp+dZUqMCWYtfQknQjWwPDhJ20MaXdqtSzVHC3G8AqAoJJJN7Aa3ude8QKmNY3tZbm5tofOZ7OxCo4Zxcc95HaAdDyseBk+Fdzff8pa4EBSantEZrk2yrbeB9Yg2BHbYag2p5s9BqdShUdxqCMqAkKLAAsSNbXJ3my5+3Whx2G6uqyb8rEd8rhlu2Vfi4aks7Nj6IYe6uT2fMf9s3PGYUMQ+XMVFrcx2ds1/o9h8lNRzNz3DT53PjNhR7jvmjnStn7OaqyLTpsCbuo0BGWwJ/ZNwDfsn76RcKKGzjTYgVqtRDYG+VUJOX5nwm09AsKP0le4y5QitwINnYg8R7GvfOLdJukr1sTVL3IDuADuFiR+EDXPoz8/jPx6TqLk/GTv7TX3fnB2ih3r84FeiOdRefppv2+cm/TUta1hMWxSdvw/KB54Km92sDfI1u/s7Z330K4d02aC4IzVXZb+76q/NTOS9E8GlbF0sML5qjLmPAL7TAduW8+lMNh0potNFCooAVQLAAcBA94iICIiAiIgIiICIiBrPTno0uPwxp2HWLdqZOmttVJ4Bhp2Gx4T5o2jgKmHdkcMjKSpvoQdxU8jbzn17Nb6T9EMNjReqtqlrColg1uTX0Ydh8LQPle8Tqu3fRPVpEmmesT3lVgR3oCx8QCO6ao/RB7kK6kjhmFx3ggWgarE2J+iNccCf4T8mnk3ReuPqn+EwKKJcno3X9xv4W/KZDo1X90/wmBX4TGvTuFtZgQQRcWIsfhLLYGzHr1QTzuSeHNj3fOTMF0Ve4L37rZj5L+JE2YYfqqZRR1an2iSDUfsNtFHYI1O627ZphWqqGyJ7I9Udwlvg8Mj5absM1Y9Wi3szltCBbUC288BKXBhUBqVPZX2V4seAE/Nh484TEfTq6h3cHqEI3KbguoJFlAuBzuT2wq23pl0qGCAwNGwypZzu1cXJ8zunLGdDqSpPbx+EmbdxIxdd69QEs594bhu4yvOAp8m/i/wB4GTJTPBP68JDo4AXuzKeNgdJhVwLZvVBC8yQfHSSTs4e83l/tA/WwtP3R8PzmKYBWNgvx/wB5icAeDt5RUwdT9EiAszPpYb2JAW/bA6X6L+ijnGDGkEUkVgpP1ntk05getrz07u1SHszBrRpJSUWVFCgdw1PeTc+MmQEREBERAREQEREBERAREQEoOlnRynjqDUmOR9GSoB6yONxvvI4EcjL+IHzxjuim0sMxUiubbmphqqEcwQD8bGVq43FLp117aWYDfyOk+mZzf0ldEKlYricKgLgFaqKBmccHHvMNQeJBHKBzEbXxY/xEPh/vMjtvGc08j+cxxWysXTBapSdFG9npuoHDUkACQ71PsH+u+BKbb2N+x5H85Cr7RxLG7WPnPQPU9wHuMdc/Gmf4oEdsbVbegJtpqT3C3fae+PBcIKjKclNUW5N8q7zv5kz9OJPuMDYi+htfvkAK711cg5cvhuII87wPzqafMfxMJ5VcMfqOoHaxP4SW9ZBUFO2p433G1wP65zKpkUgNlBbReN+/kIEdcKLD1zfjYi3xn6uFJNhUb4fnP3EFKdi6DXQAfEzHaVLLTGS/rML25WNoGGL6yml8xuWtfiBbdO6ejvopSTD0sTVQNWcCopa9kBHq2G7NbW/bpulP0S9HFOrh6VbFM93Cv1a2AykAgMSL3O/S2/xnVKaBQFUAAAAAaAAaACB6REQEREBERAREQEREBERAREQEREBERAi47BpWptSqLmRwVYcwfkZz2t6J6dz1eJZRwDIGI7yGW/lOmRA4zjvRdi1Y9W9KovAlmRvFSCB/FK6r6PtoruoZv2atP/UQZ3eIHz7U6H7QXfhqvhkf+RjIVbo/i1uGw1cX1/VVN/O4E+j4gfLR2RUWpnqJUUjT1kK3IFr69kwp7Lq4nEKlJS77sg1OhJv3dvCfVEwCAagAHugfPFfoHjqzqn0aomvtsAEAO/M19LWBnWMH6OsAmQtSZ2QC5ao9nOlyyA5SL8LWm5RAxAtoJlEQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQPyIiB//9k=" alt="" class="home__img">
+                    </div>
+    
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                            Facebook
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                            Twitter
+                        </a>
+                        <a href="https://instagram.com/_coder_vikash?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+    
+                    <div class="home__data">
+                        <h1 class="home__title">NEW WATCH <br> APPLE 9 SERIES</h1>
+                        <p class="home__description">
+                            New smart watch of Apple 9 series.
+                        </p>
+                        <span class="home__price">Rs 80,900</span>
+
+                        <div class="home__btns">
+                            <a href="https://www.apple.com/in/apple-watch-series-9/" class="button button--gray button--small">
+                                Buy Now
+                            </a>
+                            <button class="button home__button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    Featured
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR0jalloZVBdex2mHHYO1FzuUmNWkQ2O3eHymOXOIF4ninwP_zwWBaw5l_90w4_Ul-Tqjxr1CalGlaaG4qgLBUC4n-uLXA8rSddm0plNo-KvOZmwGbY5w09H9o" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Apple SE GPS Watch</h3>
+                            <span class="featured__price">Rs 37,900</span>
+                        </div>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR-cfZgxAlHr1uKvpxELQLDXx3DybNvs2MDjjm1xL3jiTdp0rn4RkpAsZOr_5Eb_sjoSx2wrpg8A67xunY78QkDJim2GhTHniBAuOhzAQHAxpI0zmTty2cuIQ" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Apple Watch 8 Series</h3>
+                            <span class="featured__price">Rs 35,900</span>
+                        </div>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">Sale</span>
+
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTaPiNJRCENUwDBygyJDP4IXIcMHIkI73JUXJFSv_qSXb0NOsmeRfZyJ2Tx_-pudIT_o5pj-LbWHrMRfe8mIGQV4tNlxuUPv1xaT1ED4bRgecLfXL4gvadMbg" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">Apple Watch 7 Series</h3>
+                            <span class="featured__price">Rs 37,900</span>
+                        </div>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+                        <button class="button featured__button">ADD TO CART</button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            Our Story
+                        </h2>
+    
+                        <h1 class="story__title">
+                            Inspirational Watch of <br> this year
+                        </h1>
+    
+                        <p class="story__description">
+                            The latest and modern watches of this year, is available in various 
+                            presentations in this store, discover them now.
+                        </p>
+    
+                        <a href="https://www.apple.com/in/" class="button button--small">Discover</a>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/s/m/1/-original-imagte7bgrwtxzbg.jpeg?q=70" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    Products
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/watch-card-40-ultra2-202309_GEO_IN?wid=340&hei=264&fmt=p-jpg&qlt=95&.v=1693611627405" alt="" class="products__img">
+
+                        <h3 class="products__title">Apple WatchUltra 2</h3>
+                        <span class="products__price">Rs 89,900</span>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="https://rukminim2.flixcart.com/image/416/416/ku8pbbk0/smartwatch/f/i/n/ios-mkn03hn-a-apple-yes-original-imag7eqbhvghffgu.jpeg?q=70" alt="" class="products__img">
+
+                        <h3 class="products__title">Apple Watch 7 Series</h3>
+                        <span class="products__price">Rs 41,900</span>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/d/d/p/-original-imaghxh8k9sm6hyk.jpeg?q=70" alt="" class="products__img">
+
+                        <h3 class="products__title">Apple Watch 8 Series With GPS</h3>
+                        <span class="products__price">Rs 41,999</span>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/q/m/q/-original-imaghxg9cwddrghx.jpeg?q=70" alt="" class="products__img">
+
+                        <h3 class="products__title">Apple Watch 8 Series With ECG</h3>
+                        <span class="products__price">Rs 37,999</span>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+
+                    <article class="products__card">
+                        <img src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/o/a/a/-original-imaghxh9rgrc9ebm.jpeg?q=70" alt="" class="products__img">
+
+                        <h3 class="products__title">Apple Watch Ultra With GPS</h3>
+                        <span class="products__price">Rs 82,999</span>
+                        <a href="https://www.apple.com/in/shop/buy-watch">Buy Now</a>
+                        <button class="products__button">
+                            <i class='bx bx-shopping-bag'></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Hello, I am user of this watch Apple 9 Series.
+                                    This is a wonderful watch. It is comfortable watch
+                                    and also I buy this watch form this website so please by this website.
+                                </p>
+                                <h3 class="testimonial__date">Sep 17. 2023</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="testimonial1.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Lee Doe</span>
+                                        <span class="testimonial__perfil-detail">User of this watch</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Hello, I am user of this watch Apple 9 Series.
+                                    This is a wonderful watch. It is comfortable watch
+                                    and also I buy this watch form this website so please by this website.
+                                </p>
+                                <h3 class="testimonial__date">Sep 15.2023 </h3>
+                                <div class="testimonial__perfil">
+                                    <img src="testimonial2.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Samantha Mey</span>
+                                        <span class="testimonial__perfil-detail">Director of a company</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    Hello, I am user of this watch Apple 9 Series.
+                                    This is a wonderful watch. It is comfortable watch
+                                    and also I buy this watch form this website so please by this website.
+                                </p>
+                                <h3 class="testimonial__date">Sep 10. 2023</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="me2.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">Vikash Kumar Singh</span>
+                                        <span class="testimonial__perfil-detail">Director Of This Website</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <i class='bx bx-right-arrow-alt' ></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-left-arrow-alt' ></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__images">
+                        <div class="testimonial__square"></div>
+                        <img src="data:image/jpeg;base64,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" alt="" class="testimonial__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                        <p class="newsletter__description">
+                            Don't miss out on your discounts. Subscribe to our email 
+                            newsletter to get the best offers, discounts, coupons, 
+                            gifts and much more.
+                        </p>
+                    </div>
+
+                    <form action="https://instagram.com/_coder_vikash?igshid=OGQ5ZDc2ODk2ZA==" class="newsletter__subscribe">
+                        <input type="email" placeholder="Enter your email" class="newsletter__input">
+                        <button class="button">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Our information</h3>
+
+                    <ul class="footer__list">
+                        <li>Sector 48,Delhi  </li>
+                        <li>India, Asia</li>
+                        <li>123-456-789</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">About Us</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://support.apple.com/en-in/HT201232" class="footer__link">Support Center</a>
+                        </li>
+                        <li>
+                            <a href="https://www.apple.com/in/contact/" class="footer__link">Customer Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/_coder_vikash?igshid=OGQ5ZDc2ODk2ZA==" class="footer__link">Copy Right</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Product</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://www.decathlon.in/cycles/road-bikes-18192?id=18192&type=c" class="footer__link">Road bikes</a>
+                        </li>
+                        <li>
+                            <a href="https://www.decathlon.in/cycles/mountain-bikes-18188?id=18188&type=c" class="footer__link">Mountain bikes</a>
+                        </li>
+                        <li>
+                            <a href="https://www.bigbasket.com/pd/40214388/crompton-rechargeable-emergency-inverter-led-bulb-b22-9-watt-white-1-pc/?z=MzE0OTkyNTYyNQ&utm_source=google&utm_medium=cpc&utm_campaign=Patna-PLA/&gclid=CjwKCAjwpJWoBhA8EiwAHZFzfvTyA6s0H7mvVCwTy3G2mzMzTOU34OIDB_Uw-qw1kCff-Ag6AMxmQhoCEkoQAvD_BwE" class="footer__link">Electric Bulb</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accesories</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+
+                        <a href="https://instagram.com/_coder_vikash?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; _coder_vikash. All rigths reserved</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="main.js"></script>
+    </body>
+</html>
